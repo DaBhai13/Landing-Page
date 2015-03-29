@@ -1,0 +1,115 @@
+/* Base Styles */
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #222;
+    font-size: 16px;
+    line-height: 1.4em;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 42em;/* FallBack */
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background: url(../img/2746960560_8711acfc60_o.jpg) no-repeat;
+    background-size: cover;
+    /* FlexBox Vendor Prefixes*/
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.logo{
+    font-size: 4.2em;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Poiret One', cursive;
+}
+
+/* Page Content */
+
+.container{
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 60%;
+}
+
+.heading{
+    font-size: 1.75em;
+    margin-bottom: .9em;
+}
+
+.banner{
+    width: 100%;
+    background: #ED6C4D;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-container{
+    margin: 0 auto;
+    padding: 10px 15px;
+    max-width: 85%;
+}
+
+/* Back To Top Button */
+
+.top{
+    display: none;
+    background: #222;
+    position: fixed;
+    padding: .6em;
+    color: #fff;
+    bottom: 5%;
+    right: 3%;
+    text-decoration: none;
+    border-radius: 3px;
+    opacity: .65;
+    font-size: 1.8em;
+}
+
+.top:hover{
+    opacity: 1;
+    -webkit-transition: all 1s;
+            transition: all 1s;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px){
+
+    .logo{
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 320px){
+
+    .logo{
+        font-size: 2.5em;
+    }
+
+    .top{
+        padding: .5em;
+    }
+}
